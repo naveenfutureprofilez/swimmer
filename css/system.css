@@ -260,7 +260,7 @@ h1.color-white{font-size:32px;}
 100%{transform:rotate(0deg) translate(-315px) rotate(-360deg);}
 }
 .priceBtn{font-family:'Proxima Nova',sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:43px;color:#6CD5E0;background:transparent;border-radius:30px;padding:0px 36px;border:1px solid #6CD5E0;position:absolute;top:1107px;}
-#ourPrice{background:linear-gradient(197.93deg,#1A3B7E 45.16%,#091939 162.69%);height:100vh;overflow:hidden;cursor:pointer;}
+#ourPrice{background:linear-gradient(197.93deg,#1A3B7E 45.16%,#091939 162.69%);height:auto;overflow:hidden;cursor:pointer;padding-bottom: 50px;}
 .headerTitle{font-family:'Titillium Web',sans-serif;font-style:normal;font-weight:900;font-size:75px;line-height:114px;text-shadow:2px 0 #fcdb64,-2px 0 #fcdb64,0 2px #fcdb64,0 -2px #fcdb64,1px 1px #fcdb64,-1px -1px #fcdb64,1px -1px #fcdb64,-1px 1px #fcdb64;color:#1a3b7e;text-align:center;}
 .wavelong{position:absolute;left:0;right:0;}
 .cusWaveimgfive{width:15%;}
@@ -306,8 +306,7 @@ h1.color-white{font-size:32px;}
 /* width:100%;*/
 /*}
 */
-.why_us_section{/* position:relative;*/
- overflow:hidden;width:100%;height:100vh;}
+.why_us_section{overflow:hidden;width:100%;height: 1050px;}
 .main_image{background-image:url("../images/whyuse/flow4_image.png");position:relative;width:100%;background-repeat:no-repeat;background-size:cover;padding:100px 0;}
 .why_us_section .why_us_text p{font-size:18px;text-align:center;color:#fff;margin:auto 25%;}
 .why_us_section .why_us_text{opacity:0;}
@@ -452,6 +451,8 @@ to{transform:translateX(0%);}
 .text_details_hover{font-size:26px;line-height:32px;}
 #ourExpertise .main_container{height:900px;}
 .small_text_details_hover{top:71%;}
+.fBottemtree{right: 10%}
+.footer-active .fBottemtree{bottom: -200px;}
 }
 @media screen and (max-width:1920px) and (max-height:810px){.why_us_section{height:1000px;}
 #ourExpertise{height:900px;}
@@ -525,3 +526,11 @@ to{transform:translateX(0%);}
     height: 130px;
 }
 .swimmers_img { height: auto; object-fit: contain; padding: 0 6%; }
+
+.section_class.statistics.sec-active .line-stats {
+    opacity: 1;
+}
+
+.section_class.statistics .line-stats {
+    opacity: 0;
+}
