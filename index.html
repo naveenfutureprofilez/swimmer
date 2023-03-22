@@ -218,7 +218,7 @@
                             </div>
 
                             <div class=" mb-3 item" style="   background: #2B5A84;  margin-right: 4%;height: 422px;display: flex;
-            align-items: center; box-shadow: -10px 7px 15px 0px rgba(10, 26, 61, 0.5); padding: 0 46px;">
+                                    align-items: center; box-shadow: -10px 7px 15px 0px rgba(10, 26, 61, 0.5); padding: 0 46px;">
                                 <div class=" card_inner_row g-0">
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -464,7 +464,6 @@
                     </div>
             </section>
 
-
             <section id="ourPrice" class="section_class pricesec">
                 <div class="container">
                         <div class="ourPrice-Continer">
@@ -590,14 +589,30 @@
         <script type="text/javascript" src='js/jquery.fullpage.min.js'></script> 
         <script type="text/javascript">
                 // FastClick.attach(document.body);
-                $('#fullpage').fullpage({
-                    scrollingSpeed: 7000,
-                    autoScrolling: true,
-                    fitToSection: true,
-                    fitToSectionDelay: 6000,
-                    scrollBar: false,
-                    easing: 'easeInOutCubic',
-                    easingcss3: 'ease',
+
+                // row_main_card_slider.preventDefault();
+
+
+                $(document).ready(function() {
+                    var slideIndexS = 0,
+                    sliding = false;
+                    $('#fullpage').fullpage({
+                        scrollingSpeed: 1000
+                    });
+                    $("body").hover(
+                        function() {
+                            $(this).addClass("hover");
+                        },
+                        function() {
+                            $(this).removeClass("hover");
+                        }
+                    );
+                });
+
+                
+                $(document).on('scroll', function(){
+                    const scale = Math.max(100 - 0.2*window.scrollY, 1);
+                    $('.hero_sec_title_box').css("transform", `scale(${scale/100})`);
                 });
         </script>
         

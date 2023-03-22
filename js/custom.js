@@ -24,13 +24,14 @@ $(document).ready(function () {
     top_sky_color.style.top = -value * 0.5 + "px";
   });
 });
+
+
 $(document).ready(function () {
   var targets = document.querySelectorAll(".section_class");
   var obsOptions = {
     root: null, // measure against the viewport
     threshold: 0.5, // how much of the element should be visible before handler is triggered
   };
-
   let cr;
   let handler = (entries, opts) => {
     entries.forEach((entry) => {
@@ -44,12 +45,13 @@ $(document).ready(function () {
       }
     });
   };
-
   targets.forEach((el) => {
     var observer = new IntersectionObserver(handler, obsOptions);
     observer.observe(el);
   });
 });
+
+
 
 var owl = $(".row_main_card_slider");
 owl.owlCarousel({
