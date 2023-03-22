@@ -1,6 +1,4 @@
-$(document).ready(function (){
-  
-
+$(document).ready(function () {
   // Home Page Load Animation Start
 
   // $(".hTreeleft").animate(
@@ -140,96 +138,94 @@ $(document).ready(function (){
   // OurPrice Scroll Animation Close
 
   // Footer Scroll Animation Start
-  var scroll_start = 0;
-  var startchange = $("#footer");
-  var offset = startchange.offset();  
-  if (startchange.length) {
-    // console.log(startchange.length);
-    $(document).scroll(function () {      
-      scroll_start = $(this).scrollTop(); 
-      // console.table('cords',{
-      //   start: scroll_start,
-      //   end: offset.top
-      // });
-      if (scroll_start >= offset.top) {
-        // console.log('sjkhjhsdg');
-        $(".ftreeOne").animate(
-          {
-            width: "317px",
-          },
-          2000,
-          function () {}
-        );
-        $(".ftreeThree").animate(
-          {
-            right: "-23.02%",
-            top: "-10.82%",
-            width: "332px",
-          },
-          2000,
-          function () {}
-        );
-        $(".ftreeTwo").animate({
-          left: "0",
-          width: "743px",
-        });
-        $(".frighttubetwo").animate(
-          {
-            right: "-34.53%",
-          },
-          2000,
-          function () {}
-        );
-        $(".flefttubeone").animate({
-          right: "431px",
-          top: "102px",
-        });
-        $(".fball").animate(
-          {
-            right: "300px",
-            top: "38px",
-          },
-          2000,
-          function () {}
-        );
-        $(".fmiddletubetwo").animate(
-          {
-            left: "7.09%",
-            top: "60.73%",
-          },
-          2000,
-          function () {}
-        );
-        $(".fBottemtree").animate(
-          {
-            width: "550px",
-            bottom: "-186px",
-          },
-          2000,
-          function () {}
-        );
-        $(".footerBtn").animate(
-          {
-            opacity: "1",
-          },
-          2000,
-          function () {}
-        );
-        $(".footerBtn button").animate(
-          {
-            opacity: "1",
-            padding: "7px 20px",
-          },
-          2000,
-          function () {}
-        );
-      } else {
-        // $('.navbar-default').css('background-color', 'transparent');
-      }
-    });
-  }
-
-
+  // var scroll_start = 0;
+  // var startchange = $("#footer");
+  // var offset = startchange.offset();
+  // if (startchange.length) {
+  //   // console.log(startchange.length);
+  //   $(document).scroll(function () {
+  //     scroll_start = $(this).scrollTop();
+  //     // console.table('cords',{
+  //     //   start: scroll_start,
+  //     //   end: offset.top
+  //     // });
+  //     if (scroll_start >= offset.top) {
+  //       // console.log('sjkhjhsdg');
+  //       $(".ftreeOne").animate(
+  //         {
+  //           width: "317px",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".ftreeThree").animate(
+  //         {
+  //           right: "-23.02%",
+  //           top: "-10.82%",
+  //           width: "332px",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".ftreeTwo").animate({
+  //         left: "0",
+  //         width: "743px",
+  //       });
+  //       $(".frighttubetwo").animate(
+  //         {
+  //           right: "-34.53%",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".flefttubeone").animate({
+  //         right: "431px",
+  //         top: "102px",
+  //       });
+  //       $(".fball").animate(
+  //         {
+  //           right: "300px",
+  //           top: "38px",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".fmiddletubetwo").animate(
+  //         {
+  //           left: "7.09%",
+  //           top: "60.73%",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".fBottemtree").animate(
+  //         {
+  //           width: "550px",
+  //           bottom: "-186px",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".footerBtn").animate(
+  //         {
+  //           opacity: "1",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //       $(".footerBtn button").animate(
+  //         {
+  //           opacity: "1",
+  //           padding: "7px 20px",
+  //         },
+  //         2000,
+  //         function () {}
+  //       );
+  //     } else {
+  //       // $('.navbar-default').css('background-color', 'transparent');
+  //     }
+  //   });
+  // }
 
   // Footer Scroll Animation Close
   // Flow 2 Scroll Animation Start
@@ -284,4 +280,3 @@ $(document).ready(function (){
   }
   // Our Expertise Scroll Animation End
 });
-

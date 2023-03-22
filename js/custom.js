@@ -91,6 +91,23 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+
+
+
+
+
+  var scroll_Price = 0;
+  var startPrice = $("#herosec");
+
+  if (startPrice.length) {
+    $(document).scroll(function () {
+      scroll_Price = $(this).scrollTop();
+      if (scroll_Price < 100) {
+        $(`section`).removeClass("sec-active");
+      }
+    });
+  }
+
   var targets = document.querySelectorAll(".section_class");
   var obsOptions = {
     root: null, // measure against the viewport
@@ -103,10 +120,11 @@ $(document).ready(function () {
         document.body.classList.remove(...document.body.classList);
         cr = entry.target.id;
         document.body.classList.add(entry.target.id + "-active");
-        $(`section#${cr}`).focus().addClass('sec-active');
-        console.log('cr-id', cr);
-        $(`section#${cr}`).siblings('section').removeClass('sec-active');
+        $(`section#${cr}`).focus().addClass("sec-active");
+        $(`section#${cr}`).siblings("section").removeClass("sec-active");
       }
+
+      console.log("intersectionRatio", entry.intersectionRatio);
     });
   };
   targets.forEach((el) => {

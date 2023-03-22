@@ -120,6 +120,28 @@ h4#ourExpertisetitle{margin-top:60px;color:rgb(252,219,100) !important;text-shad
 .our_experties_main,#ourExpertise .main_container { height: 100%; }
 .main_container:hover:after { display: none; }
 
+.ballimg{position: absolute;z-index: 1;top: 0;left: 0;}
+.footer-active .ballimg{animation: footerball 2s linear 0.8s infinite forwards;}
+@keyframes footerball {
+    0%{transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}
+}
+.ball_shadow {
+    margin-top: 30px;
+}
+#footer{position: relative;}
+.footerBtn button{transform-origin: center; transform: scale(0.8);padding: 7px 20px;}
+.ftreeOne,.ftreeThree,.ftreeTwo,.frighttubetwo,.flefttubeone,.fball,.fmiddletubetwo,.fBottemtree,.footerBtn,.footerBtn button{transition: 2s ease-in-out;}
+.footer-active .ftreeOne{width: 317px;}
+.footer-active .ftreeThree{right: -23.02%;top: -10.82%;width: 332px;}
+.footer-active .ftreeTwo{left: 0; width: 743px;}
+.footer-active .frighttubetwo{right: -34.53%;}
+.footer-active .flefttubeone{right: 431px;top: 102px;}
+.footer-active .fball{right: 300px;top: 38px;}
+.footer-active .fmiddletubetwo{left: 7.09%;top: 60.73%;}
+.footer-active .fBottemtree{bottom: -305px;}
+.footer-active .footerBtn{opacity: 1;}
+.footer-active .footerBtn button{opacity: 1;transform: scale(1);}
 
 @media (max-width:1700px){.hero_footer{height:38%;}
 .hero_sec_title_box img{max-width:500px;}
@@ -271,7 +293,7 @@ h1.color-white{font-size:32px;}
 .fmiddletubetwo{position:absolute;left:31.09%;right:38.48%;top:18.73%;bottom:3.01%;}
 .frighttubetwo{position:absolute;right:0;top:0;}
 .frighttubetwo img{mix-blend-mode:multiply;width:594px;height:625.68px;}
-.fBottemtree{position:absolute;bottom:-87px;rotate:150deg;right:1px;z-index:0;}
+.fBottemtree{position: absolute;bottom: -87px;right: 20%;z-index: 0;}
 .flefttubeone{position:relative;}
 .fBottemfooter{position:relative;}
 /* Footer Css Close */
@@ -330,7 +352,7 @@ to{transform:translateX(0%);}
 }
 .green_img{width:250px;position:relative;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,0%);text-align:center;}
 .green_img img{width:100%;height:100%;}
-.swimmers_img{height:100vh;width:100%;padding:6%;}
+.swimmers_img{width: 100%;}
 .mt-90{margin-top:80px !important;}
 .fs-65{font-size:50px;}
 .color-white{color:white;}
@@ -487,12 +509,19 @@ to{transform:translateX(0%);}
     position: fixed;
     top: 0;
 }
-div#aboutus:after {
+#aboutus:after { 
     background: linear-gradient(360deg, #476bc0 12.24%,#496dc200 101.36%);
     content: "";
     width: 100%;
     position: absolute;
     top: -125px;
+    height: 0;
+    opacity: 0; 
+    transition: 0.3s;
+}
+.sec-active #aboutus:after {
+    transition: 0.3s;
+    opacity: 1; 
     height: 130px;
 }
-.swimmers_img{height:72vh;}
+.swimmers_img { height: auto; object-fit: contain; padding: 0 6%; }
