@@ -12,6 +12,8 @@ $(document).ready(function () {
   let titles = document.getElementById("hero_sec_title_box");
   let lefttexthero = document.getElementById("lefttexthero");
   let righttexthero = document.getElementById("righttexthero");
+  let right_gamla_box = document.getElementById("right_tree_gamla_box");
+  let hero_footer = document.querySelector(".hero_footer");
 
   let tyre = document.getElementById("tyre");
   let tree = document.getElementById("left_top_tree");
@@ -33,14 +35,29 @@ $(document).ready(function () {
     function sunScale(){ 
       const val = value * 2
       sun.style.width = value * 0.5 + "px";
+      sun.style.height = value * 0.5 + "px";
       if(val > 80){ 
-          sun.style.top = value * 1.5 + "px";
+          sun.style.top = value * 1 + "px";
       } else {
           sun.style.top = "80px";
         }
     }
     sunScale();
 
+    // FOTTER
+    // function sunScale(){ 
+    //   const val = value * 2
+    //     if(val > 80){ 
+    //       hero_footer.style.top = value * 1 + "px";
+    //     } else {
+    //       hero_footer.style.top = "80px";
+    //     }
+    // }
+    // sunScale();
+
+
+    hero_footer.style.bottom = value * 0.5 + "px";
+    right_gamla_box.style.right = -value * 0.5 + "px";
 
     // SKY
     badalimg.style.left = value * 2 + "px";
@@ -57,7 +74,7 @@ $(document).ready(function () {
     
 
     left_top_tree.style.top = -value * 0.5 + "px";
-    left_top_tree.style.left = -value * 0.5 + "px";
+    left_top_tree.style.left = -value * 0.5 + "px"; 
     // hero_sec_title_box.style.top = value * 0.5 + "px";
     // lefttexthero.style.top = value * 0.5 + "px";
 

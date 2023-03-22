@@ -58,7 +58,8 @@ img#bottom_sky_color_img{position:absolute;bottom:0;left:0;width:100%;object-fit
 100%{transform:rotate(30deg);bottom:15px;}
 }
 span.sunimg_box,span.badalimg_box,span.left_bottom_tree_box{width:100%;display:block;position:absolute;}
-.sun_img{position:absolute;top:80px;left:26%;transform-origin:center;transition:1s linear;animation:sun 3s linear .2s forwards;}
+
+.sun_img { position: absolute; top: 80px; left: 26%; transform-origin: center; transition: 1s linear; animation: sun 3s linear .2s forwards; width: 57px; height: 57px; background: #FFBF43; border-radius: 100%; }
 @keyframes sun{0%{transform:scale(1);}
 100%{transform:scale(1.4);}
 }
@@ -465,9 +466,31 @@ to{transform:translateX(0%);}
 
 
 /* parllex */
-#sun_img{min-width:50px !important;max-width:200px !important;}
+#sun_img{  min-height: 50px; min-width:50px !important; max-width:200px !important;}
 #tyre{transform-origin:center center;transform:rotate(0deg);}
 
 #titles { 
     transform-origin:center center;
 }
+
+
+.page_wrapper > section:not(.hero_section) {
+    position: relative;
+    z-index: 99999;
+}
+.page_wrapper {
+    padding-top: 100vh;
+}
+.hero_section {
+    position: fixed;
+    top: 0;
+}
+div#aboutus:after {
+    background: linear-gradient(360deg, #476bc0 12.24%,#496dc200 101.36%);
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -125px;
+    height: 130px;
+}
+.swimmers_img{height:72vh;}
