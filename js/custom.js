@@ -34,8 +34,8 @@ $(document).ready(function () {
 
     function sunScale(){ 
       const val = value * 2
-      sun.style.width = value * 0.5 + "px";
-      sun.style.height = value * 0.5 + "px";
+      sun.style.width = value * 0.3 + "px";
+      sun.style.height = value * 0.3 + "px";
       if(val > 80){ 
           sun.style.top = value * 1 + "px";
       } else {
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     // SKY
     badalimg.style.left = value * 2 + "px";
-    badalimg.style.top = value * 1 + "px";
+    badalimg.style.top = -value * 1 + "px";
 
     // tyre
     tyre.style.transform = `rotate(${value * 0.3}deg)`;
@@ -78,7 +78,7 @@ $(document).ready(function () {
     // hero_sec_title_box.style.top = value * 0.5 + "px";
     // lefttexthero.style.top = value * 0.5 + "px";
 
-    left_bottom_tree_box.style.top = value * 0.5 + "px";
+    left_bottom_tree_box.style.left = -value * 0.3 + "px";
 
 
     bottom_sky_color_img.style.bottom = -value * 0.5 + "px";

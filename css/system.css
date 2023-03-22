@@ -40,7 +40,9 @@ html{scroll-behavior:smooth;}
 10.71429%{transform:translate(0,0)}
 100%{transform:translate(0,0)}
 }
-.scroll_down { position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); z-index: 99; }
+.scroll_down { position: absolute; bottom: -100px; left: 45%; 
+    /* transform: translateX(-50%); */
+     z-index: 99; }
 .scroll_down a{position:relative;display:block;text-align:center;}
 .scroll_down a span { position: absolute; top: 63px; left: 50%; transform: translateX(-50%); text-align: center; font-style: normal; font-weight: 300; font-size: 13px; line-height: 22px; color: #fff; }
 .scroll_down a span svg { display: block; margin: 0 auto 2px; max-height: 12px; }
