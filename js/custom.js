@@ -1,8 +1,23 @@
 $(document).ready(function () {
-  let sun = document.getElementById("sunimg");
+
+
+  // const width = Math.max(100 * window.scrollY, 1);
+  // $('#sunimg').css("width", `${width}`+'!important');
+
+
+  
+  
+  let sun = document.getElementById("sun_img");
   let badalimg = document.getElementById("badalimg");
+  let titles = document.getElementById("hero_sec_title_box");
+  let lefttexthero = document.getElementById("lefttexthero");
+  let righttexthero = document.getElementById("righttexthero");
+
+  let tyre = document.getElementById("tyre");
+  let tree = document.getElementById("left_top_tree");
+
+
   let left_top_tree = document.getElementById("left_top_tree");
-  // let hero_sec_title_box = document.getElementById("hero_sec_title_box");
   // let lefttexthero = document.getElementById("lefttexthero");
   let left_bottom_tree_box = document.getElementById("left_bottom_tree_box");
   let bottom_sky_color_img = document.getElementById("bottom_sky_color_img");
@@ -12,15 +27,47 @@ $(document).ready(function () {
 
   window.addEventListener("scroll", function () {
     var value = window.scrollY;
-    sun.style.left = value * 0.5 + "px";
-    badalimg.style.left = value * 0.5 + "px";
-    left_top_tree.style.left = -value * 0.5 + "px";
+
+    // SUN
+
+    function sunScale(){ 
+      const val = value * 2
+      sun.style.width = value * 0.5 + "px";
+      if(val > 80){ 
+          sun.style.top = value * 1.5 + "px";
+      } else {
+          sun.style.top = "80px";
+        }
+    }
+    sunScale();
+
+
+    // SKY
+    badalimg.style.left = value * 2 + "px";
+    badalimg.style.top = value * 1 + "px";
+
+    // tyre
+    tyre.style.transform = `rotate(${value * 0.3}deg)`;
+   
+
+    // Texts
+    titles.style.top = value * 0.4 + "px";
+    lefttexthero.style.top = value * 0.4 + "px";
+    righttexthero.style.top = value * 0.4 + "px";
+    
+
     left_top_tree.style.top = -value * 0.5 + "px";
+    left_top_tree.style.left = -value * 0.5 + "px";
     // hero_sec_title_box.style.top = value * 0.5 + "px";
     // lefttexthero.style.top = value * 0.5 + "px";
+
     left_bottom_tree_box.style.top = value * 0.5 + "px";
+
+
     bottom_sky_color_img.style.bottom = -value * 0.5 + "px";
+
     duckimame.style.right = value * 0.5 + "px";
+
     top_sky_color.style.top = -value * 0.5 + "px";
   });
 });

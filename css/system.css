@@ -2,6 +2,19 @@
 @font-face{font-family:'Century Gothic';src:url('../fonts/CenturyGothic-Bold.eot');src:local('Century Gothic Bold'),local('CenturyGothic-Bold'),url('../fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/CenturyGothic-Bold.woff') format('woff'),url('../fonts/CenturyGothic-Bold.ttf') format('truetype');font-weight:bold;font-style:normal;}
 *{box-sizing:border-box;padding:0;margin:0;}
 /* Header sec new css */
+
+
+
+
+
+.section_class{
+    /* height:100vh;  
+     /* transition:.7s linear;*/
+}
+/* #fullpage{height:100vh;overflow:hidden;} */
+
+
+
 html{scroll-behavior:smooth;}
 .hero_section{width:100%;height:100vh;background:#C4E2FF;position:relative;z-index:99;}
 .hero_content_wrapper{position:relative;overflow:hidden;width:100%;height:100%;}
@@ -105,12 +118,6 @@ h4#ourExpertisetitle{margin-top:60px;color:rgb(252,219,100) !important;text-shad
 .main_container:hover:after { display: none; }
 
 
-
-
-.section_class{height:100vh;/* scroll-snap-align:start;*/
- /* transition:.7s linear;*/
-}
-#fullpage{height:100vh;overflow:hidden;}
 @media (max-width:1700px){.hero_footer{height:38%;}
 .hero_sec_title_box img{max-width:500px;}
 .right_tree_gamla{max-height:350px;}
@@ -454,4 +461,13 @@ to{transform:translateX(0%);}
 .el4{bottom:-94px;left:0;}
 .el3{bottom:-33px;right:0px;width:67px;}
 .statBox{max-width:290px;margin:auto;margin-bottom:20px;}
+}
+
+
+/* parllex */
+#sun_img{min-width:50px !important;max-width:200px !important;}
+#tyre{transform-origin:center center;transform:rotate(0deg);}
+
+#titles { 
+    transform-origin:center center;
 }
