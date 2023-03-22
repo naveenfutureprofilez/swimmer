@@ -93,9 +93,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 
-
-
-
   var scroll_Price = 0;
   var startPrice = $("#herosec");
 
